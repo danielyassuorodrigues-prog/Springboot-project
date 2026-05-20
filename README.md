@@ -79,9 +79,12 @@ Projeto desenvolvido para fins educacionais, com foco em:
 - Aplicação de boas práticas de desenvolvimento e segurança
 
 ### 1️⃣ Configurar o banco de dados
--> Configure o arquivo application.properties:
-    -> spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco
-    -> spring.datasource.username=seu_usuario
+-> Configure o arquivo application.properties:  
+
+    -> spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco  
+    
+    -> spring.datasource.username=seu_usuario  
+    
     -> spring.datasource.password=sua_senha
     
 ### 2️⃣ Executar o backend
