@@ -1,16 +1,98 @@
-Desenvolvi um sistema completo de agendamento utilizando Spring Boot no backend e HTML, CSS e JavaScript no frontend, com integração direta entre as camadas via API REST.
+# 💈 Barbershop appointment System
 
-O sistema permite o cadastro de agendamentos contendo informações como nome do cliente, telefone, serviço, data e hora, com persistência dos dados em banco de dados MySQL.
+Sistema completo de agendamento desenvolvido com **Spring Boot** no backend e **HTML, CSS e JavaScript** no frontend, utilizando integração via **API REST**.
 
-Neste projeto foram aplicados principalmente : 
+O projeto permite o cadastro de agendamentos contendo:
 
-- Conceitos básicos de POO(progamação orientada a objetos, Herança , polimorfismo , encapsulamento) 
-- Boas práticas de progamação 
-- Spring boot (Rest API) 
-- Spring Data JPA (Abstração de ecossistema para evitar acoplamento) 
+- Nome do cliente
+- Telefone
+- Serviço
+- Data
+- Hora
+
+Todos os dados são persistidos em um banco de dados **MySQL**.
+
+---
+
+# 🚀 Tecnologias Utilizadas
+
+## 🔹 Backend
+- Java
+- Spring Boot
+- Spring Data JPA
 - Hibernate
-- MySQL (Banco de Dados utilizado na aplicação) 
+- MySQL
 
-- Arquitetura em camadas ( Controller , Service , Repository , Entities) 
+## 🔹 Frontend
+- HTML5
+- CSS3
+- JavaScript
 
-Realizado para fins educacionais , com integração de frontend e backend via API Rest , manipulação de dados com spring data JPA, Aplicação web completa , consumo de API com javascript e boas práticas de organização e segurança.
+---
+
+# 🧠 Conceitos Aplicados
+
+Durante o desenvolvimento deste projeto foram aplicados principalmente:
+
+- Programação Orientada a Objetos (POO)
+    - Herança
+    - Polimorfismo
+    - Encapsulamento
+
+- Boas práticas de programação
+- Desenvolvimento de API REST
+- Integração Frontend + Backend
+- Manipulação de dados com Spring Data JPA
+- Persistência de dados com Hibernate
+- Organização em arquitetura em camadas
+
+---
+
+# 🏗️ Arquitetura do Projeto
+
+O backend foi estruturado utilizando arquitetura em camadas:
+
+```text
+Controller
+Service
+Repository
+Entities
+
+```
+
+# 🧠 Integração frontend e backend
+
+A comunicação entre frontend e backend foi realizada utilizando:
+
+- Fetch API (JavaScript)
+- Requisições HTTP
+- API REST desenvolvida com Spring Boot
+
+# 📚 Objetivo do Projeto
+
+Projeto desenvolvido para fins educacionais, com foco em:
+
+- Desenvolvimento Full Stack
+- Consumo de APIs REST
+- Integração entre camadas
+- Organização de aplicações web
+- Aplicação de boas práticas de desenvolvimento e segurança
+
+### 1️⃣ Configurar o banco de dados
+-> Configure o arquivo application.properties:
+    -> spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco
+    -> spring.datasource.username=seu_usuario
+    -> spring.datasource.password=sua_senha
+    
+### 2️⃣ Executar o backend
+-> mvn spring-boot:run
+
+### 3️⃣ Executar o frontend 
+-> Utilize o live  server do vscode ou diretamente pela springboot em /static
+
+### 👨‍💻 Autor
+
+Desenvolvido por Daniel Yassuo Rodrigues.
+
+
+
