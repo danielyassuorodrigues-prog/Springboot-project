@@ -93,9 +93,7 @@ Projeto desenvolvido para fins educacionais, com foco em:
 ### 3️⃣ Executar o frontend 
 -> Utilize o live  server do vscode ou diretamente pela springboot em /static
 
-### 👨‍💻 Autor
 
-Desenvolvido por Daniel Yassuo Rodrigues.
 
 
 
