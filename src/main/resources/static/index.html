@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Agendamento</h2>
+
+    <label>Nome</label>
+    <input id="nome" type="text">
+
+    <label>Telefone</label>
+    <input id="telefone" type="tel">
+
+    <label>Serviço</label>
+    <select id="servico">
+        <option>Corte</option>
+        <option>Barba</option>
+        <option>Combo</option>
+    </select>
+
+    <label>Data</label>
+    <input id="data" type="date">
+
+    <label>Hora</label>
+    <input id="hora" type="time">
+
+    <button onclick="enviar()">Agendar</button>
+</div>
+
+<!-- ligação com JS externo -->
+<script src="script.js"></script>
+
+</body>
+</html>
