@@ -1,62 +1,196 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+body {
     height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.80),
+            rgba(0, 0, 0, 0.80)
+        ),
+        url("OSSPRE.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 30px;
+
+    padding: 0 40px;
+
+    overflow: hidden;
+}
+
+
+.container {
+
+    width: 420px;
+
+    padding: 45px;
+
+    border-radius: 24px;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.65);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* TÍTULO */
+.container h2 {
+
+    color: white;
+
+    font-size: 40px;
+
+    margin-bottom: 28px;
+
+    letter-spacing: 1px;
+}
+
+/* LABELS */
+.container label {
+
+    color: rgba(255,255,255,0.85);
+
+    margin-top: 18px;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+
+.container input,
+.container select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.07);
+
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.container input::placeholder {
+
+    color: rgba(255,255,255,0.45);
+}
+
+
+.container input:focus,
+.container select:focus {
+
+    border-color: white;
+
+    background: rgba(255,255,255,0.12);
+
+    transform: scale(1.01);
+}
+
+.container select option {
+
+    color: black;
+}
+
+.container button {
+
+    margin-top: 35px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: black;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.container button:hover {
+
+    background: #d9d9d9;
+
+    transform: translateY(-2px);
+}
+
+
+.logo-area {
+
+    width: 45%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    width: 350px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+.logo-area img {
+
+    width: 550px;
+
+    max-width: 100%;
+
+    background-color :
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 30px rgba(255,255,255,0.12));
 }
 
-.container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
 
-label {
-    font-size: 14px;
-    color: #555;
-    margin-top: 10px;
-    display: block;
-}
+@media (max-width: 950px) {
 
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    outline: none;
-    transition: 0.3s;
-}
+    body {
 
-input:focus, select:focus {
-    border-color: #6c63ff;
-    box-shadow: 0 0 5px rgba(108,99,255,0.4);
-}
+        justify-content: center;
 
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background: #6c63ff;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+        padding: 20px;
+    }
 
-button:hover {
-    background: #574fd6;
+    .logo-area {
+
+        display: none;
+    }
+
+    .container {
+
+        width: 100%;
+
+        max-width: 420px;
+    }
 }
